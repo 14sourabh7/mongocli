@@ -1,0 +1,28 @@
+<p>refresh the page after adding user from cli</p>
+<p>method - php cli.php main add
+    <?php echo "< name > < email >"; ?>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <?php
+
+        foreach ($userlist as $user => $list) {
+        ?>
+
+            <tr>
+                <th scope="row"><?php echo $user ?></th>
+                <td><?php echo $list[0] ?></td>
+                <td><?php echo $list[1] ?></td>
+            </tr>
+        <?php }
+        ?>
+    </tbody>
+</table>
